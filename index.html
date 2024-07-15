@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>TRADERZZ</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Ubuntu:wght@500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="icon" href="img/bg-hero.png">
+</head>
+<style>
+
+@media (max-width: 991.98px) {
+    .navbar .navbar-nav {
+        padding: 0 15px;
+        background:#224266 !important ;
+    }
+
+    .navbar .navbar-nav .nav-link  {
+        margin-right: 0;
+        padding: 10px 0;
+    }
+
+    .animated-img {
+      animation: moveImage 5s infinite alternate ease-in-out ;
+  }
+  
+  @keyframes moveImage {
+      0% {
+          transform: translateX(0);
+      }
+      100% {
+          transform: translateX(10px);
+      }
+  }
+  .about-img{
+margin-top: -140px !important;
+  }
+}
+h6{
+    font-size: 11px !important;
+}
+</style>
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid sticky-top" style="background-color: rgb(33 66 104) !important ;" id="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark p-0">
+                <a href="/" class="navbar-brand">
+                    <h1 class="text-white"><span class="text-dark">.</span>TRADERZZ</h1>
+                </a>
+                
+                <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto">
+                        <a href="/" class="nav-item nav-link active" id="navHome">Home</a>
+                        <a href="#about" class="nav-item nav-link" id="navAbout">About</a>
+                        <a href="#services" class="nav-item nav-link" id="navServices">Services</a>
+                        <a href="#whyus" class="nav-item nav-link" id="navWhyUs">Why Us</a>
+                        <!-- <a href="#faq" class="nav-item nav-link">FAQ</a> -->
+                        <div class="nav-item dropdown">  
+                            <a  href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                                <img id="language-flag" src="img/Flag_of_the_United_States.png" alt="Language Flag" style="width: 20px;"> English
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end m-0">
+                                <a href="#" class="dropdown-item" onclick="setLanguage('en')">
+                                    <img src="img/Flag_of_the_United_States.png" alt="English" style="width: 20px;"> English
+                                </a>
+                                <a href="#" class="dropdown-item" onclick="setLanguage('ar')">
+                                    <img src="img/Flag_of_Saudi_Arabia.svg.png" alt="Arabic" style="width: 20px;"> العربية
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    
+    <!-- Navbar End -->
+
+
+   
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+    <!-- About Start -->
+  <!-- About Start -->
+  <div class="container-fluid py-5" id="about">
+    <div class="container">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                <div class="about-img">
+                    <img class="img-fluid animated-img" src="img/01e5442b-99b4-4dc6-8094-3d5bfdea324e-removebg-preview.png">
+                </div>
+            </div>
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3" id="aboutUsLabel">About Us</div>
+                <h1 class="mb-4" id="aboutUsTitle"> Welcome to TRADERZZ , your go-to for innovative solutions </h1>
+                <p class="mb-4" id="aboutUsDescription1">We offer advanced trading bots for FX and cryptocurrency markets, plus exclusive ICO insights</p>
+                <p class="mb-4" id="aboutUsDescription2">Our mission is to empower traders with top tools and strategies for success, delivering excellence, reliability, and value.</p>
+                <div class="row g-3">
+                    <div class="col-sm-6">
+                        <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i><span id="awardWinning">Award Winning</span></h6>
+                        <h6 class="mb-0"><i class="fa fa-check text-primary me-2"></i><span id="professionalStaff">Professional Staff</span></h6>
+                    </div>
+                    <div class="col-sm-6">
+                        <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i><span id="twentyFourSevenSupport">24/7 Support</span></h6>
+                        <h6 class="mb-0"><i class="fa fa-check text-primary me-2"></i><span id="fairPrices">Fair Prices</span></h6>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center mt-4">
+                    <a class="btn btn-outline-primary btn-square me-3" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-primary btn-square me-3" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-outline-primary btn-square me-3" href=""><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+</div>
+
+    <!-- About End -->
+
+
+   
+  
+
+
+   
+
+<br>
+<br>
+<br>
+   
+
+<section class="bg-light" data-wow-delay="0.1s" id="services">
+    <div class="container py-2">
+        
+        <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 500px;">
+            <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3" id="servicesBtn">Services</div>
+            <h1 class="mb-4" id="exploreServicesTitle">Explore Our Services</h1>    
+        </div>
+
+        <article class="postcard light blue wow fadeIn" data-wow-delay="0.1s">
+            <a class="postcard__img_link" href="#">
+                <img class="postcard__img animated-img" src="img/936e5b1a-2480-4505-ab91-b1a9c646dcbc.png" alt="Image Title" />
+            </a>
+            <div class="postcard__text t-dark">
+                <h1 class="postcard__title blue"><a class="hovera" href="#" id="fxTradingBots">FX Trading Bots</a></h1>
+                <div class="postcard__bar"></div>
+                <div class="postcard__preview-txt" id="fxTradingBotsDesc">Our FX trading bots use advanced algorithms and real-time data to automatically execute trades. They optimize strategies, ensure consistent results, and provide customizable options and robust risk management tools.</div>
+            </div>
+        </article>
+
+        <article class="postcard light red wow fadeIn" data-wow-delay="0.2s">
+            <a class="postcard__img_link" href="#">
+                <img class="postcard__img animated-img" src="img/1c631d56-4cf6-48fa-80fe-2915bd115d5c.png" alt="Image Title" />	
+            </a>
+            <div class="postcard__text t-dark">
+                <h1 class="postcard__title red"><a class="hovera" href="#" id="cryptoTradingBots">Cryptocurrency Trading Bots</a></h1>
+                <div class="postcard__bar"></div>
+                <div class="postcard__preview-txt" id="cryptoTradingBotsDesc">Our cryptocurrency trading bots are designed to handle the volatility and rapid pace of the crypto market. Equipped with advanced algorithms, they support multiple cryptocurrencies, provide 24/7 market monitoring, and offer high-frequency trading capabilities. Trade confidently and efficiently with our sophisticated tools.</div>
+            </div>
+        </article>
+
+        <article class="postcard light green wow fadeRight" data-wow-delay="0.3s">
+            <a class="postcard__img_link" href="#">
+                <img class="postcard__img animated-img" src="img/99224b95-a14b-46b7-bb51-60f13de1af44.png" alt="Image Title" />
+            </a>
+            <div class="postcard__text t-dark">
+                <h1 class="postcard__title green"><a class="hovera" href="#" id="ico">Initial Coin Offerings (ICOs)</a></h1>
+                <div class="postcard__bar"></div>
+                <div class="postcard__preview-txt" id="icoDesc">TRADERZZ offers comprehensive support for ICO investments, including research, pre-sale access, and project evaluations, ensuring investors can make informed decisions easily and securely. Our goal is to provide a reliable platform for navigating ICOs, enabling investors to capitalize on blockchain opportunities while managing risks effectively.</div>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+
+   
+
+     <!-- Feature Start -->
+     <div style="background-color: #224266;" class="container-fluid feature pt-5" id="whyus">
+        <div class="container pt-5">
+            <div class="row g-5">
+                <div class="col-lg-6 align-self-center mb-md-5 pb-md-5 wow fadeIn" data-wow-delay="0.3s">
+                    <div class="btn btn-sm border rounded-pill text-white px-3 mb-3" id="whyUsBtn">Why Choose Us</div>
+                    <h3 class="text-white mb-4" id="whyUsTitle">Elevate Your Trading Success with TRADERZZ:
+                        Cutting-Edge Bots, Exclusive Insights, and Unmatched
+                        Support</h3>
+                    <p style="font-size: 12px;" class="text-light mb-4" id="whyUsDesc">Discover TRADERZZ, your ultimate destination for innovative trading solutions. With our
+                        advanced FX and cryptocurrency trading bots and exclusive ICO insights, we empower traders to
+                        achieve unparalleled success. Experience excellence, reliability, and value like never before.</p>
+                    <div class="d-flex align-items-center text-white mb-3">
+                        <div class="btn-sm-square bg-white text-primary rounded-circle me-3">
+                            <i class="fa fa-check"></i>
+                        </div>
+                        <span id="techSpan">State-of-the-Art Technology:</span>
+                    </div>
+                    <h6 class="wow fadeIn text-white" data-wow-delay="0.4s" id="techDesc" style="margin-left: 40px;">Harness the power of our sophisticated trading bots, designed with cutting-edge algorithms and real-time data to
+                        optimize your strategies and deliver consistent, profitable results.</h6>
+                    <div class="d-flex align-items-center text-white mb-3">
+                        <div class="btn-sm-square bg-white text-primary rounded-circle me-3">
+                            <i class="fa fa-check"></i>
+                        </div>
+                        <span id="supportSpan">All-Inclusive Support:</span>
+                    </div>
+                    <h6 class="wow fadeIn text-white" data-wow-delay="0.4s" id="supportDesc" style="margin-left: 40px;">Benefit from our comprehensive services spanning FX, cryptocurrency markets, and exclusive ICO
+                        insights. We provide robust tools and expert guidance to help you make informed decisions and trade
+                        with confidence.</h6>
+                    <div class="d-flex align-items-center text-white mb-3">
+                        <div class="btn-sm-square bg-white text-primary rounded-circle me-3">
+                            <i class="fa fa-check"></i>
+                        </div>
+                        <span id="customerSpan">Customer-First Approach:</span>
+                    </div>
+                    <h6 class="wow fadeIn text-white" data-wow-delay="0.4s" id="customerDesc" style="margin-left: 40px;">At TRADERZZ, your success is our priority. Enjoy customizable options, robust risk management tools,
+                        and continuous support from our team of trading experts, tailored to meet your unique needs and elevate
+                        your trading experience.</h6>
+                    <div class="row g-4 pt-3">
+                        <div class="col-sm-6">
+                            <div class="d-flex rounded p-3" style="background: rgba(256, 256, 256, 0.1);">
+                                <i class="fa fa-users fa-3x text-white"></i>
+                                <div class="ms-3">
+                                    <h2 class="text-white mb-0" data-toggle="counter-up" id="happyClientsCount">9999</h2>
+                                    <p class="text-white mb-0" id="happyClientsText">Happy Clients</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex rounded p-3" style="background: rgba(256, 256, 256, 0.1);">
+                                <i class="fa fa-check fa-3x text-white"></i>
+                                <div class="ms-3">
+                                    <h2 class="text-white mb-0" data-toggle="counter-up" id="projectsCompleteCount">9999</h2>
+                                    <p class="text-white mb-0" id="projectsCompleteText">Projects Complete</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 align-self-end text-center text-md-end wow fadeIn" data-wow-delay="0.5s">
+                    <img class="img-fluid animated-img" src="img/6a1220ba-e9a0-4d69-9fb5-b426c8391f25-removebg-preview.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+ <!-- FAQs Start -->
+ <!-- <div class="container-fluid py-5" id="faq">
+    <div class="container py-5">
+        <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 500px;">
+            <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">Popular FAQs</div>
+            <h1 class="mb-4">Frequently Asked Questions</h1>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="accordion" id="accordionFAQ1">
+                    <div class="accordion-item wow fadeIn" data-wow-delay="0.1s">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                How to build a website?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionFAQ1">
+                            <div class="accordion-body">
+                                Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item wow fadeIn" data-wow-delay="0.2s">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                How long will it take to get a new website?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionFAQ1">
+                            <div class="accordion-body">
+                                Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item wow fadeIn" data-wow-delay="0.3s">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Do you only create HTML websites?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionFAQ1">
+                            <div class="accordion-body">
+                                Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item wow fadeIn" data-wow-delay="0.4s">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                Will my website be mobile-friendly?
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                            data-bs-parent="#accordionFAQ1">
+                            <div class="accordion-body">
+                                Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="accordion" id="accordionFAQ2">
+                    <div class="accordion-item wow fadeIn" data-wow-delay="0.5s">
+                        <h2 class="accordion-header" id="headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                Will you maintain my site for me?
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                            data-bs-parent="#accordionFAQ2">
+                            <div class="accordion-body">
+                                Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item wow fadeIn" data-wow-delay="0.6s">
+                        <h2 class="accordion-header" id="headingSix">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                I’m on a strict budget. Do you have any low cost options?
+                            </button>
+                        </h2>
+                        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                            data-bs-parent="#accordionFAQ2">
+                            <div class="accordion-body">
+                                Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item wow fadeIn" data-wow-delay="0.7s">
+                        <h2 class="accordion-header" id="headingSeven">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                Will you maintain my site for me?
+                            </button>
+                        </h2>
+                        <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+                            data-bs-parent="#accordionFAQ2">
+                            <div class="accordion-body">
+                                Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item wow fadeIn" data-wow-delay="0.8s">
+                        <h2 class="accordion-header" id="headingEight">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                I’m on a strict budget. Do you have any low cost options?
+                            </button>
+                        </h2>
+                        <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
+                            data-bs-parent="#accordionFAQ2">
+                            <div class="accordion-body">
+                                Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!-- FAQs Start -->
+
+
+
+    <!-- Feature End -->
+   
+   
+<br>
+<br>
+<br>
+
+
+  <!-- testomonials -->
+  <!-- <div class="container-xxl py-5">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">Testimonial</div>
+                    <h1 class="mb-4">What Say Our Clients!</h1>
+                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam
+                        amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus
+                        clita duo justo et tempor eirmod magna dolore erat amet</p>
+                    <a class="btn btn-primary rounded-pill px-4" href="">Read More</a>
+                </div>
+                <div class="col-lg-7 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="owl-carousel testimonial-carousel border-start border-primary">
+                        <div class="testimonial-item ps-5">
+                            <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                            <p class="fs-4">Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna dolore erat amet</p>
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-1.jpg"
+                                    style="width: 60px; height: 60px;">
+                                <div class="ps-3">
+                                    <h5 class="mb-1">Client Name</h5>
+                                    <span>Profession</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-item ps-5">
+                            <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                            <p class="fs-4">Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna dolore erat amet</p>
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-2.jpg"
+                                    style="width: 60px; height: 60px;">
+                                <div class="ps-3">
+                                    <h5 class="mb-1">Client Name</h5>
+                                    <span>Profession</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-item ps-5">
+                            <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                            <p class="fs-4">Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna dolore erat amet</p>
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-3.jpg"
+                                    style="width: 60px; height: 60px;">
+                                <div class="ps-3">
+                                    <h5 class="mb-1">Client Name</h5>
+                                    <span>Profession</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  -->
+    
+ <!-- testomonials -->
+
+
+
+    <!-- Footer Start -->
+    <div style="background-color: #224266;" class="container-fluid text-white-50 footer pt-5" id="footer">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
+                    <a href="/" class="d-inline-block mb-3">
+                        <h1 class="text-white"><span class="text-primary">.</span>TRADERZZ</h1>
+                    </a>
+                    <p class="mb-0" id="footerIntro">We offer advanced trading bots for FX and cryptocurrency markets, plus exclusive ICO insights. Our mission is to empower traders with top tools and strategies for success, delivering excellence, reliability, and value.</p>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
+                    <h5 class="text-white mb-4">Get In Touch</h5>
+                    <p><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
+                    <p><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                    <p><i class="fa fa-envelope me-3"></i>info@traderzz.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
+                    <h5 class="text-white mb-4">Popular Links</h5>
+                    <a class="btn btn-link" href="#about" id="footerLinkAbout">About Us</a>
+                    <a class="btn btn-link" href="#services" id="footerLinkServices">Services</a>
+                    <a class="btn btn-link" href="#whyus" id="footerLinkWhyUs">Why Us</a>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
+                    <h5 class="text-white mb-4">Our Services</h5>
+                    <a class="btn btn-link" href="" id="footerLinkFX">FX Trading Bots</a>
+                    <a class="btn btn-link" href="" id="footerLinkCrypto">Cryptocurrency Trading Bots</a>
+                    <a class="btn btn-link" href="" id="footerLinkICO">Initial Coin Offerings (ICOs)</a>
+                </div>
+            </div>
+        </div>
+        <div class="container wow fadeIn" data-wow-delay="0.1s">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0" id="footerCopyright">
+                        <!-- &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved. -->
+    
+                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                        <!-- Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a> Distributed By <a class="border-bottom" href="https://themewagon.com">ThemeWagon</a> -->
+                        At TRADERZZ, we prioritize innovation, security, and customer satisfaction, setting us apart in the trading industry. Our team of experts continuously develops and maintains advanced trading solutions to meet the dynamic needs of our clients. By choosing TRADERZZ, you'll benefit from cutting-edge technology, extensive expertise, and dedicated support to elevate your trading experience. Join us and elevate your trading journey with our unmatched services and solutions.
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="footer-menu">
+                            <a href="/">Home</a>
+                            <a href="#about" id="footerMenuAbout">About</a>
+                            <a href="#services" id="footerMenuServices">Services</a>
+                            <a href="#whyus" id="footerMenuWhyUs">Why Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="img/qqe3s4dzgt8238iuvvo3.gif">
+    </div>
+    
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyDM0hwR3TVCpWHqh8-EW5cxYad_t2l1hAM",
+          authDomain: "traderzz.firebaseapp.com",
+          projectId: "traderzz",
+          storageBucket: "traderzz.appspot.com",
+          messagingSenderId: "261678216985",
+          appId: "1:261678216985:web:c3c376d82734f93077f788"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+      </script>
+
+
+<script>
+    function setLanguage(lang) {
+        var flagImage;
+        var languageText;
+
+        
+        if (lang === 'ar') {
+            document.documentElement.setAttribute('lang', 'ar');
+            document.documentElement.setAttribute('dir', 'rtl');
+            //add correct flag for rtl and ltr
+            flagImage = 'img/Flag_of_Saudi_Arabia.svg.png';
+            languageText = 'العربية';
+            document.getElementById('language-flag').src = flagImage;
+            document.getElementById('language-flag').alt = languageText;
+            document.getElementById('language-flag').nextSibling.textContent = languageText;
+
+            // Translate the content
+
+            document.getElementById('navHome').innerText = 'الصفحة الرئيسية';
+            document.getElementById('navAbout').innerText = 'عن TRADERZZ';
+            document.getElementById('navServices').innerText = 'الخدمات';
+            document.getElementById('navWhyUs').innerText = 'لماذا نحن';
+
+
+            document.getElementById('aboutUsLabel').textContent = 'معلومات عنا';
+            document.getElementById('aboutUsTitle').textContent = 'مرحبًا بكم في TRADERZZ ، وجهتك للحلول المبتكرة';
+            document.getElementById('aboutUsDescription1').textContent = 'نحن نقدم روبوتات تداول متقدمة لأسواق الفوركس والعملات المشفرة ، بالإضافة إلى رؤى حصرية عن ICO';
+            document.getElementById('aboutUsDescription2').textContent = 'مهمتنا هي تمكين المتداولين بأفضل الأدوات والاستراتيجيات للنجاح ، مع تقديم التميز والموثوقية والقيمة.';
+            document.getElementById('awardWinning').innerText = 'حاصلون على جوائز';
+            document.getElementById('professionalStaff').innerText = 'فريق محترف';
+            document.getElementById('twentyFourSevenSupport').innerText = 'دعم على مدار الساعة';
+            document.getElementById('fairPrices').innerText = 'أسعار مناسبة';
+
+
+            document.getElementById('servicesBtn').innerText = 'الخدمات';
+            document.getElementById('exploreServicesTitle').innerText = 'استكشاف خدماتنا';
+            document.getElementById('fxTradingBots').innerText = 'الروبوتات التجارية للفوركس';
+            document.getElementById('fxTradingBotsDesc').innerText = 'تستخدم الروبوتات التجارية لدينا خوارزميات متقدمة وبيانات فورية لتنفيذ الصفقات تلقائيًا. تحسين الاستراتيجيات وضمان نتائج متسقة وتوفير خيارات قابلة للتخصيص وأدوات إدارة المخاطر القوية.';
+            document.getElementById('cryptoTradingBots').innerText = 'الروبوتات التجارية للعملات الرقمية';
+            document.getElementById('cryptoTradingBotsDesc').innerText = 'تم تصميم الروبوتات التجارية للعملات الرقمية لدينا للتعامل مع التقلبات ووتيرة السوق السريعة للغاية. مجهزة بخوارزميات متقدمة، تدعم عدة عملات رقمية، توفر مراقبة سوق على مدار الساعة، وتقدم إمكانيات التداول بتردد عال. تداول بثقة وكفاءة مع أدواتنا المتطورة.';
+            document.getElementById('ico').innerText = 'الاكتتابات الأولية للعملات (ICOs)';
+            document.getElementById('icoDesc').innerText = 'تقدم TRADERZZ دعمًا شاملاً للاستثمارات في الاكتتابات الأولية للعملات (ICOs)، بما في ذلك البحث والوصول إلى مرحلة ما قبل البيع وتقييم المشاريع، مما يضمن للمستثمرين إتخاذ قرارات مستنيرة بسهولة وأمان. هدفنا هو توفير منصة موثوقة لتصفح الاكتتابات الأولية للعملات، مما يمكن المستثمرين من الاستفادة من فرص البلوكتشين وإدارة المخاطر بفعالية.';
+            
+
+
+            document.getElementById('whyUsBtn').innerText = 'لماذا نحن';
+            document.getElementById('whyUsTitle').innerText = 'ارتقِ بنجاح تداولك مع TRADERZZ: الروبوتات المتطورة، الرؤى الحصرية، والدعم اللا مثيل له';
+            document.getElementById('whyUsDesc').innerText = 'اكتشف TRADERZZ، وجهتك النهائية لحلول التداول الابتكارية. من خلال الروبوتات المتقدمة لتداول الفوركس والعملات الرقمية والرؤى الحصرية للاكتتابات الأولية، نمنح التجار القدرة على تحقيق نجاح لا مثيل له. تجربة الامتياز، الجدارة، والقيمة كما لم تعهدها من قبل.';
+            document.getElementById('techSpan').innerText = 'تكنولوجيا حديثة:';
+            document.getElementById('techDesc').innerText = 'استخدم قوة الروبوتات التجارية المتطورة لدينا، المصممة بخوارزميات متقدمة وبيانات فورية لتحسين استراتيجياتك وتحقيق نتائج مستقرة ومربحة.';
+            document.getElementById('supportSpan').innerText = 'دعم شامل:';
+            document.getElementById('supportDesc').innerText = 'استفد من خدماتنا الشاملة التي تغطي أسواق الفوركس والعملات الرقمية، والرؤى الحصرية للاكتتابات الأولية. نوفر أدوات قوية وإرشادات متخصصة لمساعدتك في اتخاذ قرارات مستنيرة والتداول بثقة.';
+            document.getElementById('customerSpan').innerText = 'التوجه الأول للعملاء:';
+            document.getElementById('customerDesc').innerText = 'في TRADERZZ، نجاحك هو أولويتنا. استمتع بخيارات قابلة للتخصيص، وأدوات إدارة المخاطر القوية، والدعم المستمر من فريق خبراء التداول لدينا، مصممة لتلبية احتياجاتك الفريدة ورفع تجربتك في التداول.';
+            document.getElementById('happyClientsCount').innerText = '9999';
+            document.getElementById('happyClientsText').innerText = 'عملاء سعداء';
+            document.getElementById('projectsCompleteCount').innerText = '9999';
+            document.getElementById('projectsCompleteText').innerText = 'مشاريع منجزة';
+
+
+            document.getElementById('footerIntro').innerText = 'نحن نقدم روبوتات تداول متقدمة لأسواق الفوركس والعملات الرقمية، بالإضافة إلى رؤى حصرية للاكتتابات الأولية. مهمتنا هي تمكين المتداولين بأفضل الأدوات والاستراتيجيات لتحقيق النجاح، موفرين التميز والموثوقية والقيمة.';
+            document.getElementById('footerLinkAbout').innerText = 'عن TRADERZZ';
+            document.getElementById('footerLinkServices').innerText = 'الخدمات';
+            document.getElementById('footerLinkWhyUs').innerText = 'لماذا نحن';
+            document.getElementById('footerLinkFX').innerText = 'روبوتات تداول الفوركس';
+            document.getElementById('footerLinkCrypto').innerText = 'روبوتات تداول العملات الرقمية';
+            document.getElementById('footerLinkICO').innerText = 'الاكتتابات الأولية (ICOs)';
+            document.getElementById('footerCopyright').innerText = 'في TRADERZZ، نولي الأولوية للابتكار والأمان ورضا العملاء، مما يميزنا في صناعة التداول. يعمل فريقنا من الخبراء بشكل مستمر على تطوير وصيانة حلول تداول متقدمة لتلبية الاحتياجات الديناميكية لعملائنا. باختيار TRADERZZ، ستستفيد من تقنيات حديثة، خبرة واسعة، ودعم مكرس لرفع تجربتك في التداول. انضم إلينا وارتقِ برحلتك في التداول مع خدماتنا وحلولنا الفريدة.';
+            document.getElementById('footerMenuAbout').innerText = 'الصفحة الرئيسية';
+            document.getElementById('footerMenuServices').innerText = 'معلومات';
+            document.getElementById('footerMenuWhyUs').innerText = 'معلومات السلع';
+
+        } else {
+            document.documentElement.setAttribute('lang', 'en');
+            document.documentElement.setAttribute('dir', 'ltr');
+
+             //add correct flag for rtl and ltr
+            flagImage = 'img/Flag_of_the_United_States.png';
+            languageText = 'English';
+            document.getElementById('language-flag').src = flagImage;
+            document.getElementById('language-flag').alt = languageText;
+            document.getElementById('language-flag').nextSibling.textContent = languageText;
+
+
+ // Reset to English content
+            document.getElementById('navHome').innerText = 'Home';
+            document.getElementById('navAbout').innerText = 'About';
+            document.getElementById('navServices').innerText = 'Services';
+            document.getElementById('navWhyUs').innerText = 'Why Us';
+
+
+            document.getElementById('aboutUsLabel').textContent = 'About Us';
+            document.getElementById('aboutUsTitle').textContent = ' Welcome to TRADERZZ , your go-to for innovative solutions ';
+            document.getElementById('aboutUsDescription1').textContent = 'We offer advanced trading bots for FX and cryptocurrency markets, plus exclusive ICO insights';
+            document.getElementById('aboutUsDescription2').textContent = 'Our mission is to empower traders with top tools and strategies for success, delivering excellence, reliability, and value.';
+            
+            document.getElementById('awardWinning').innerText = 'Award Winning';
+            document.getElementById('professionalStaff').innerText = 'Professional Staff';
+            document.getElementById('twentyFourSevenSupport').innerText = '24/7 Support';
+
+
+            document.getElementById('fairPrices').innerText = 'Fair Prices';
+
+            document.getElementById('servicesBtn').innerText = 'Services';
+            document.getElementById('exploreServicesTitle').innerText = 'Explore Our Services';
+            document.getElementById('fxTradingBots').innerText = 'FX Trading Bots';
+            document.getElementById('fxTradingBotsDesc').innerText = 'Our FX trading bots use advanced algorithms and real-time data to automatically execute trades. They optimize strategies, ensure consistent results, and provide customizable options and robust risk management tools.';
+            document.getElementById('cryptoTradingBots').innerText = 'Cryptocurrency Trading Bots';
+            document.getElementById('cryptoTradingBotsDesc').innerText = 'Our cryptocurrency trading bots are designed to handle the volatility and rapid pace of the crypto market. Equipped with advanced algorithms, they support multiple cryptocurrencies, provide 24/7 market monitoring, and offer high-frequency trading capabilities. Trade confidently and efficiently with our sophisticated tools.';
+            document.getElementById('ico').innerText = 'Initial Coin Offerings (ICOs)';
+            document.getElementById('icoDesc').innerText = 'TRADERZZ offers comprehensive support for ICO investments, including research, pre-sale access, and project evaluations, ensuring investors can make informed decisions easily and securely. Our goal is to provide a reliable platform for navigating ICOs, enabling investors to capitalize on blockchain opportunities while managing risks effectively.';
+
+
+            document.getElementById('whyUsBtn').innerText = 'Why Choose Us';
+            document.getElementById('whyUsTitle').innerText = 'Elevate Your Trading Success with TRADERZZ: Cutting-Edge Bots, Exclusive Insights, and Unmatched Support';
+            document.getElementById('whyUsDesc').innerText = 'Discover TRADERZZ, your ultimate destination for innovative trading solutions. With our advanced FX and cryptocurrency trading bots and exclusive ICO insights, we empower traders to achieve unparalleled success. Experience excellence, reliability, and value like never before.';
+            document.getElementById('techSpan').innerText = 'State-of-the-Art Technology:';
+            document.getElementById('techDesc').innerText = 'Harness the power of our sophisticated trading bots, designed with cutting-edge algorithms and real-time data to optimize your strategies and deliver consistent, profitable results.';
+            document.getElementById('supportSpan').innerText = 'All-Inclusive Support:';
+            document.getElementById('supportDesc').innerText = 'Benefit from our comprehensive services spanning FX, cryptocurrency markets, and exclusive ICO insights. We provide robust tools and expert guidance to help you make informed decisions and trade with confidence.';
+            document.getElementById('customerSpan').innerText = 'Customer-First Approach:';
+            document.getElementById('customerDesc').innerText = 'At TRADERZZ, your success is our priority. Enjoy customizable options, robust risk management tools, and continuous support from our team of trading experts, tailored to meet your unique needs and elevate your trading experience.';
+            document.getElementById('happyClientsCount').innerText = '9999';
+            document.getElementById('happyClientsText').innerText = 'Happy Clients';
+            document.getElementById('projectsCompleteCount').innerText = '9999';
+            document.getElementById('projectsCompleteText').innerText = 'Projects Complete';
+
+
+            document.getElementById('footerIntro').innerText = 'We offer advanced trading bots for FX and cryptocurrency markets, plus exclusive ICO insights. Our mission is to empower traders with top tools and strategies for success, delivering excellence, reliability, and value.';
+            document.getElementById('footerLinkAbout').innerText = 'About Us';
+            document.getElementById('footerLinkServices').innerText = 'Services';
+            document.getElementById('footerLinkWhyUs').innerText = 'Why Us';
+            document.getElementById('footerLinkFX').innerText = 'FX Trading Bots';
+            document.getElementById('footerLinkCrypto').innerText = 'Cryptocurrency Trading Bots';
+            document.getElementById('footerLinkICO').innerText = 'Initial Coin Offerings (ICOs)';
+            document.getElementById('footerCopyright').innerText = 'At TRADERZZ, we prioritize innovation, security, and customer satisfaction, setting us apart in the trading industry. Our team of experts continuously develops and maintains advanced trading solutions to meet the dynamic needs of our clients. By choosing TRADERZZ, you\'ll benefit from cutting-edge technology, extensive expertise, and dedicated support to elevate your trading experience. Join us and elevate your trading journey with our unmatched services and solutions.';
+            document.getElementById('footerMenuAbout').innerText = 'Home';
+            document.getElementById('footerMenuServices').innerText = 'About';
+            document.getElementById('footerMenuWhyUs').innerText = 'Services';
+        }
+        
+    }
+    
+    </script>
+
+
+</body>
+
+</html>
